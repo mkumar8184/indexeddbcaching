@@ -1,27 +1,13 @@
-# Indexeddbcachingapp
+# Client side data caching using indexed db in angular app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Caching plays a vital role in enhancing the performance of web applications. When it comes to client-side data caching, one of the main concerns is the size of the data to be stored. For smaller datasets, solutions like LocalStorage are often sufficient due to their simplicity and ease of use. However, LocalStorage has limited capacity (typically around 5MB), making it less suitable for larger datasets. In such cases, IndexedDB becomes a better alternative. IndexedDB supports storing much larger volumes of data—up to 10GB or 50% of the client’s disk space, depending on the browser and device. This makes it ideal for caching large datasets. IndexedDB is a more robust, asynchronous, and transactional storage solution, offering greater flexibility in managing complex data types and enabling faster access to large datasets on the client side. Here's how we can leverage IndexedDB for caching data in an Angular application  or any modern frontend stack. 
 
-## Development server
+## in this code created seperate service to handle all indexed db write and get data 
+you can find stored data as below.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Data on screen 
+![image](https://github.com/user-attachments/assets/72aec519-a746-4cf2-bae1-98ed0f012888)
 
-## Code scaffolding
+Indexed db storage 
+![image](https://github.com/user-attachments/assets/102ed289-7092-40ce-b924-44175936af3a)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
