@@ -1,6 +1,6 @@
+import { HttpClient } from '@angular/common/http'; // Import HttpClient
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';  // Import HttpClient
-import { Observable } from 'rxjs';  // For handling asynchronous HTTP requests
+import { Observable } from 'rxjs'; // For handling asynchronous HTTP requests
 import { IndexedDbService } from './services/IndexedDbService';
 
 @Component({
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
 
   getCountriesFromApi() {
-    return this.httpClient.get("https://localhost:7123/api/v1/masters/" + "countries");
+    return this.httpClient.get("yourbase url" + "countries");
   }
   getCountries(forceReload = false): Observable<any> {
     const datasetKey = 'countries'; //define your key with same name with your api endpoint for better 
